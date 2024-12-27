@@ -14,3 +14,35 @@ Stack trace:
 #11 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
 #12 C:\Users\brahim\Desktop\PROJECT\gestion_examens\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
 #13 {main}
+ERROR - 2024-12-27 15:23:36 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'gestion_examens' in C:\Users\ce pc\Desktop\gestion_examens\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Users\ce pc\Desktop\gestion_examens\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'gestion_examens', 3306, '', 0)
+#1 C:\Users\ce pc\Desktop\gestion_examens\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ce pc\Desktop\gestion_examens\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ce pc\Desktop\gestion_examens\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\ce pc\Desktop\gestion_examens\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\ce pc\Desktop\gestion_examens\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\ce pc\Desktop\gestion_examens\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\ce pc\Desktop\gestion_examens\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\ce pc\Desktop\gestion_examens\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\ce pc\Desktop\gestion_examens\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\ce pc\Desktop\gestion_examens\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\Users\ce pc\Desktop\gestion_examens\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\Users\ce pc\Desktop\gestion_examens\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'gestion_examens' in C:\Users\ce pc\Desktop\gestion_examens\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\ce pc\Desktop\gestion_examens\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ce pc\Desktop\gestion_examens\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ce pc\Desktop\gestion_examens\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\ce pc\Desktop\gestion_examens\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\ce pc\Desktop\gestion_examens\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\ce pc\Desktop\gestion_examens\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\ce pc\Desktop\gestion_examens\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\ce pc\Desktop\gestion_examens\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\ce pc\Desktop\gestion_examens\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\ce pc\Desktop\gestion_examens\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 C:\Users\ce pc\Desktop\gestion_examens\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\Users\ce pc\Desktop\gestion_examens\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
