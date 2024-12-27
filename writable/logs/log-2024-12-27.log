@@ -1,0 +1,16 @@
+ERROR - 2024-12-27 15:12:10 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\Users\brahim\Desktop\PROJECT\gestion_examens\app\Database\Migrations\2024-12-27-150036_CreateUsersTable.php(59): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Database\MigrationRunner.php(867): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\Users\brahim\Desktop\PROJECT\gestion_examens\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\Users\brahim\Desktop\PROJECT\gestion_examens\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
