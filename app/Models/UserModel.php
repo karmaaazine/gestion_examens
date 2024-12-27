@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class UserModel extends Model
 {
     // The name of the table associated with this model
-    protected $table = 'User';
+    protected $table = 'users';
 
     // The primary key of the table
     protected $primaryKey = 'id';
@@ -19,8 +19,11 @@ class UserModel extends Model
     protected $validationRules = [
         'name'     => 'required|min_length[3]|max_length[255]',
         'email'    => 'required|valid_email|is_unique[users.email]',
+        'city'     => 'required|min_length[3]|max_length[100]',   // Règles de validation pour "city"
+        'tel'      => 'required|numeric|min_length[10]|max_length[15]',  // Règles de validation pour "tel"
         'password' => 'required|min_length[8]',
     ];
+    
 
     // Fields that should be validated during insert or update operations
     protected $validationMessages = [
