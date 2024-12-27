@@ -31,14 +31,17 @@ class RegisterController extends Controller
 
         // Si les données sont valides, les insérer dans la base de données
         $userModel = new UserModel();
+        
+        // Utilisation de la méthode save qui gère l'insertion ou la mise à jour de manière fluide
         $userModel->save([
             'name' => $this->request->getPost('name'),
             'email' => $this->request->getPost('email'),
-            'email' => $this->request->getPost('city'),
-            'email' => $this->request->getPost('tel'),
+            'city' => $this->request->getPost('city'),
+            'tel' => $this->request->getPost('tel'),
             'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT), // Hachage du mot de passe
         ]);
 
-        return redirect()->to('/login')->with('success', 'Inscription réussie. Veuillez vous connecter.');
+        return redirect()->to('/')->with('success', 'Inscription réussie. Veuillez vous connecter.');
     }
+
 }
