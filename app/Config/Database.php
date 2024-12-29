@@ -27,9 +27,25 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
+<<<<<<< HEAD
         'username'     => 'root',
         'password'     => '',
         'database'     => 'gestion_examens',
+=======
+<<<<<<< HEAD
+        'username'     => '',
+        'password'     => '',
+        'database'     => '',
+=======
+
+        'username'     => '',
+        'password'     => '',
+        'database'     => '',
+        'username'     => 'root',
+        'password'     => '',
+        'database'     => 'gestion_examens',
+>>>>>>> f1501c7b8d83b5ed213f8f641e83b7830a663ac8
+>>>>>>> 34f780f486035c3ef926669f6bdaf4e3f3dcb204
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
