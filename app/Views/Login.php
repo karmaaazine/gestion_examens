@@ -24,7 +24,7 @@
                         </div>
                     <?php endif; ?>
                     <!-- Formulaire de connexion -->
-                    <form action="<?= site_url('auth/login_process') ?>" method="POST">
+                    <form action="<?= site_url('/login_process') ?>" method="POST">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required>
@@ -39,7 +39,7 @@
                     </form>
                 </div>
                 <div class="card-footer text-center">
-                    <small>Pas encore inscrit ? <a href="<?= site_url('auth/register') ?>">Créer un compte ici</a></small>
+                    <small>Pas encore inscrit ? <a href="<?= site_url('/registe') ?>">Créer un compte ici</a></small>
                 </div>
             </div>
         </div>

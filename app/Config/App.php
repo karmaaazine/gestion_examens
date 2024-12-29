@@ -199,4 +199,12 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
     public bool $CSPEnabled = false;
+<<<<<<< HEAD
+=======
+
+
+    public $env = 'development'; // Changez cela à 'development'
+
+
+>>>>>>> f1501c7b8d83b5ed213f8f641e83b7830a663ac8
 }
