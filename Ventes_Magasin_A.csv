@@ -1,4 +1,0 @@
-Vente_ID,Magasin_ID,Produit_ID,Quantité,Date,Produit,Catégorie,Prix,CA
-1,101,1,10,2024-01-01,Pomme,Alimentation,1.5,15.0
-3,101,3,2,2024-01-03,TV,Électronique,500.0,1000.0
-5,101,5,4,2024-01-05,Chaise,Meubles,50.0,200.0
