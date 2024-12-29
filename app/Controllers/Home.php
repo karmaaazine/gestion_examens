@@ -8,11 +8,8 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
-<<<<<<< HEAD
-=======
     public function register(): string
     {
         return view('register');
     }
->>>>>>> 399ad472520c71034827e28f9baf4abab57b0981
 }
