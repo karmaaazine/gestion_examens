@@ -13,7 +13,7 @@ class RegisterController extends Controller
     }
 
     public function store()
-    {
+    {   
         $validation = \Config\Services::validation();
         
         // Validation des données envoyées via le formulaire
@@ -41,7 +41,7 @@ class RegisterController extends Controller
             'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT), // Hachage du mot de passe
         ]);
 
-        return redirect()->to('/')->with('success', 'Inscription réussie. Veuillez vous connecter.');
+        return redirect()->to('http://localhost:8080/login')->with('success', 'Inscription réussie. Veuillez vous connecter.');
     }
 
 }

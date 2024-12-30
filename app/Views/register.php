@@ -58,7 +58,7 @@
         </ul>
     <?php endif; ?>
 
-    <form action="<?= base_url('/register') ?>" method="POST">
+    <form action="/registerStore" method="POST">
         <?= csrf_field() ?>
         <div>
             <label for="name">Nom :</label>

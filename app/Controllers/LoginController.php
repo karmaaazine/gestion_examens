@@ -36,7 +36,7 @@ class LoginController extends Controller
         session()->set('isLoggedIn', true);
         session()->set('user', $user);
         
-        return redirect()->to('/');
+        return redirect()->to('http://localhost:8080/dashboard');
     }
 
     public function logout()
